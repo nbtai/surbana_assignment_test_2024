@@ -19,3 +19,6 @@ The project follows the standard structure provided by NestJS:
 2. Services: Implement business logic and interact with the database.
 3. Entities: Represent the database models (in this case, the Location entity).
 4. DTOs (Data Transfer Objects): Used to validate request payloads.
+
+## Local Setup
+For detailed instructions on setting up the project locally, please refer to the [Local Setup Guide](./docs/INSTALLATION.md).
