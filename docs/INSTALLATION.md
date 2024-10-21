@@ -19,7 +19,6 @@ Ensure you have the following installed:
 1.  **Clone the repository:**
     
     `git clone git@github.com:nbtai/surbana_assignment_test_2024.git`
-    `cd location-api` 
     
 2.  **Install dependencies:** Run the following command to install all required Node.js modules:
     `npm install` 
@@ -38,6 +37,9 @@ Ensure you have the following installed:
 5.  **Run database migrations (if any):** Use TypeORM to run any migrations (optional, based on your configuration).
    
     `npm run typeorm migration:run` 
+
+6. **Run seed data
+    `npm run seed:data` 
     
 6.  **Start the development server:** After successfully setting up the database and installing the dependencies, run the NestJS development server:
     `npm run start:dev` 

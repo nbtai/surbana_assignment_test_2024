@@ -1,0 +1,50 @@
+[
+    {
+        "name": "A",
+        "address": "Address A",
+        "area": "100 m2",
+        "children": [
+            {
+                "name": "A-CarPark",
+                "address": "Address A-CarPark",
+                "area": "80 m2"
+            },
+            {
+                "name": "A-01",
+                "address": "Address A-01",
+                "area": "100.920 m2",
+                "children": [
+                    {
+                        "name": "Lobby",
+                        "address": "Address Lobby",
+                        "area": "50 m2"
+                    },
+                    {
+                        "name": "Meeting Room 1",
+                        "address": "Address Meeting Room 1",
+                        "area": "30 m2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "B",
+        "address": "Address B",
+        "area": "200 m2",
+        "children": [
+            {
+                "name": "B-05",
+                "address": "Address B-05",
+                "area": "150 m2",
+                "children": [
+                    {
+                        "name": "B-05-11",
+                        "address": "Address B-05-11",
+                        "area": "10.200 m2"
+                    }
+                ]
+            }
+        ]
+    }
+]
