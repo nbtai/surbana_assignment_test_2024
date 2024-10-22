@@ -37,11 +37,11 @@ Ensure you have the following installed:
         DATABASE_PASSWORD=your_db_password
         DATABASE_NAME=location_db
     
-5.  **Run database migrations (if any):** Use TypeORM to run any migrations (optional, based on your configuration).
+5.  ~~**Run database migrations (if any):** Use TypeORM to run any migrations (optional, based on your configuration).~~
    
-    `npm run typeorm migration:run` 
+    ~~`npm run typeorm migration:run`~~
 
-6. **Run seed data
+6.  **Run seed data**
 
     `npm run seed:data` 
     
