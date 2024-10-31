@@ -3,6 +3,7 @@ import { typeOrmConfig } from '../config/ormconfig';
 import * as fs from 'fs';
 import * as path from 'path';
 import { DataSource } from 'typeorm';
+require('dotenv').config();
 
 async function createDatabaseIfNotExists(databaseName: string) {
     const connection = new DataSource({
@@ -14,7 +15,7 @@ async function createDatabaseIfNotExists(databaseName: string) {
     });
 
     await connection.initialize();
-
+    
     // Check if the database exists
     const dbExists = await connection.query(`SELECT 1 FROM pg_database WHERE datname='${databaseName}'`);
     if (dbExists.length === 0) {
@@ -30,7 +31,7 @@ async function createDatabaseIfNotExists(databaseName: string) {
 
 // Create a new DataSource instance
 const dummyData = async () => {
-    await createDatabaseIfNotExists(process.env.DATABASE_NAME!);
+    await createDatabaseIfNotExists(process.env.DATABASE_NAME);
 
     try {
         await typeOrmConfig.initialize();

@@ -15,7 +15,7 @@ export class Location {
     @Column()
     area!: string;
 
-    @TreeParent()
+    @TreeParent({ onDelete: 'CASCADE' })
     parent?: Location;
 
     @TreeChildren()
